@@ -45,6 +45,7 @@ for idx in 0..category.size-1 do
     ambi_swoosh
     
 ![ambi Screenshot](https://raw.githubusercontent.com/badele/sonic-pi-tools/master/test/sample/test_sample_ambi.png)
+[ambi Soundcloud](https://soundcloud.com/bruno-adele/test-sample-ambi?in=bruno-adele/sets/sonic-pi-test-samples)
     
   # bass
     bass_dnb_f
@@ -57,6 +58,7 @@ for idx in 0..category.size-1 do
     bass_woodsy_c
 
 ![bass Screenshot](https://raw.githubusercontent.com/badele/sonic-pi-tools/master/test/sample/test_sample_bass.png)
+[bass Soundcloud](https://soundcloud.com/bruno-adele/test-sample-bass?in=bruno-adele/sets/sonic-pi-test-samples)
 
   # bd
     bd_808
@@ -73,6 +75,7 @@ for idx in 0..category.size-1 do
     bd_zum
 
 ![bd Screenshot](https://raw.githubusercontent.com/badele/sonic-pi-tools/master/test/sample/test_sample_bd.png)
+[bd Soundcloud](https://soundcloud.com/bruno-adele/test-sample-bd?in=bruno-adele/sets/sonic-pi-test-samples)
 
   # drum
     drum_bass_hard
@@ -97,6 +100,7 @@ for idx in 0..category.size-1 do
     drum_tom_mid_soft
 
 ![drum Screenshot](https://raw.githubusercontent.com/badele/sonic-pi-tools/master/test/sample/test_sample_drum.png)
+[drum Soundcloud](https://soundcloud.com/bruno-adele/test-sample-drum?in=bruno-adele/sets/sonic-pi-test-samples)
 
   # elec
     elec_beep
@@ -126,6 +130,7 @@ for idx in 0..category.size-1 do
     elec_wood
 
 ![elec Screenshot](https://raw.githubusercontent.com/badele/sonic-pi-tools/master/test/sample/test_sample_elec.png)
+[elec Soundcloud](https://soundcloud.com/bruno-adele/test-sample-elec?in=bruno-adele/sets/sonic-pi-test-samples)
 
 
   # guit
@@ -135,7 +140,8 @@ for idx in 0..category.size-1 do
     guit_harmonics
     
 ![guit Screenshot](https://raw.githubusercontent.com/badele/sonic-pi-tools/master/test/sample/test_sample_guit.png)
-    
+[guit Soundcloud](https://soundcloud.com/bruno-adele/test-sample-guit?in=bruno-adele/sets/sonic-pi-test-samples)
+
     
   # loop
     loop_amen
@@ -149,6 +155,7 @@ for idx in 0..category.size-1 do
     loop_tabla
 
 ![loop Screenshot](https://raw.githubusercontent.com/badele/sonic-pi-tools/master/test/sample/test_sample_loop.png)
+[loop Soundcloud](https://soundcloud.com/bruno-adele/test-sample-loop?in=bruno-adele/sets/sonic-pi-test-samples)
 
 
   # misc
@@ -157,6 +164,7 @@ for idx in 0..category.size-1 do
     misc_crow
     
 ![misc Screenshot](https://raw.githubusercontent.com/badele/sonic-pi-tools/master/test/sample/test_sample_misc.png)
+[misc Soundcloud](https://soundcloud.com/bruno-adele/test-sample-misc?in=bruno-adele/sets/sonic-pi-test-samples)
     
     
   # perc
@@ -167,6 +175,7 @@ for idx in 0..category.size-1 do
     perc_till
 
 ![perc Screenshot](https://raw.githubusercontent.com/badele/sonic-pi-tools/master/test/sample/test_sample_perc.png)
+[perc Soundcloud](https://soundcloud.com/bruno-adele/test-sample-perc?in=bruno-adele/sets/sonic-pi-test-samples)
 
 
   # sn
@@ -175,7 +184,8 @@ for idx in 0..category.size-1 do
     sn_zome
     
 ![sn Screenshot](https://raw.githubusercontent.com/badele/sonic-pi-tools/master/test/sample/test_sample_sn.png)
-    
+ [sn Soundcloud](https://soundcloud.com/bruno-adele/test-sample-sn?in=bruno-adele/sets/sonic-pi-test-samples)
+   
     
   # tabla
     tabla_dhec
@@ -206,6 +216,7 @@ for idx in 0..category.size-1 do
     tabla_tun3
 
 ![tabla Screenshot](https://raw.githubusercontent.com/badele/sonic-pi-tools/master/test/sample/test_sample_tabla.png)
+[tabla Soundcloud](https://soundcloud.com/bruno-adele/test-sample-tabla?in=bruno-adele/sets/sonic-pi-test-samples)
 
 
   # vinyl
@@ -215,3 +226,4 @@ for idx in 0..category.size-1 do
     vinyl_scratch
 
 ![vinyl Screenshot](https://raw.githubusercontent.com/badele/sonic-pi-tools/master/test/sample/test_sample_vinyl.png)
+[vinyl Soundcloud](https://soundcloud.com/bruno-adele/test-sample-vinyl?in=bruno-adele/sets/sonic-pi-test-samples)
