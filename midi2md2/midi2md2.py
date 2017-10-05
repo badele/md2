@@ -54,44 +54,46 @@ def songinfo(songinfo, opts):
     microseconds = 1000000.0
     filename = os.path.basename(opts['FILE'])
     title = filename
+
+    # Title
+    output = ""
     if opts['--title']:
         title = opts['--title']
 
-    print "# %(title)s\n" % locals()
-    print "## Summary\n"
+    output += "# %(title)s\n\n" % locals()
+    output += "## Summary\n\n"
 
+    # Summary
     si = songinfo['songinfo']
-    summary = "* file = %s\n" % filename
-    summary += "* version = 1.0\n"
-    summary += "* %s = %s bpm (%s s)" % (
+    output += "* file = %s\n" % filename
+    output += "* version = 1.0\n"
+    output += "* %s = %s bpm (%s s);\n" % (
         si['note_unit'],
         ("%.2f" % si['bpm']).rstrip('0').rstrip('.'),
         si['tempo'] / microseconds
     )
 
     if opts['--verbose']:
-        summary += "Tempo (%s/%s)        = %s µs (%.4f s) = %s bpm\n" % (
+        output += "Tempo (%s/%s)        = %s µs (%.4f s) = %s bpm\n" % (
             si['numerator'],
             si['denominator'],
             si['tempo'],
             si['tempo'] / microseconds,
             si['bpm']
         )
-        summary += "Measure resolution = %s ticks (%s s)\n" % (si['resolution'], si['resolution'] * si['tick_time'] / microseconds)
-        summary += "Note Duration      = %s / %s ticks (%s s)\n" % (si['note_unit'],si['note_tick'], si['note_tick'] * si['tick_time'] / microseconds)
-        summary += "Song Duration      = %s second" % (si['tick_time']/microseconds * si['stop'])
-        summary += "Resolution      = %s ticks\n" % si['resolution']
-        summary += "Ticks time      = %s µs (%.4f s)\n" % (si['tick_time'],si['tick_time']/microseconds)
+        output += "Measure resolution = %s ticks (%s s)\n" % (si['resolution'], si['resolution'] * si['tick_time'] / microseconds)
+        output += "Note Duration      = %s / %s ticks (%s s)\n" % (si['note_unit'],si['note_tick'], si['note_tick'] * si['tick_time'] / microseconds)
+        output += "Song Duration      = %s second" % (si['tick_time']/microseconds * si['stop'])
+        output += "Resolution      = %s ticks\n" % si['resolution']
+        output += "Ticks time      = %s µs (%.4f s)\n" % (si['tick_time'],si['tick_time']/microseconds)
 
-    print summary
-
-    print "\n## Tracks"
+        output += "\n## Tracks"
 
     for trackid in songinfo['tracks']:
         track = songinfo['tracks'][trackid]
         tracktitle = track['trackinfo']['title']
 
-        print "\n### %(tracktitle)s\n" % locals()
+        output += "\n### %(tracktitle)s\n" % locals()
 
         tn = track['notes']
         previoustick = 0
@@ -129,11 +131,13 @@ def songinfo(songinfo, opts):
             lines += "%s " % noteline
 
         lines = lines.strip()
-        print "```\n%(lines)s\n```" % locals()
+        output += "```\n%(lines)s\n```" % locals()
+
+    return output
 
 
 if __name__ == '__main__':
     opts = docopt(__doc__)
 
     minfo = mididecode.analyseMidiFile(opts['FILE'])
-    sinfo = songinfo(minfo, opts)
+    print songinfo(minfo, opts)
