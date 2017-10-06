@@ -26,8 +26,8 @@ def getSpeedText(tick_ref,tick_value):
     :param tick_value:
     :return:
     """
-    slow = "⏪"
-    fast = "⏩"
+    slow = "<"
+    fast = ">"
 
     if tick_ref == tick_value:
         return ""
